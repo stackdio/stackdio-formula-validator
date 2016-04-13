@@ -72,8 +72,10 @@ class CustomHighState(HighState):
         for id_ in state:
             if id_ in highstate:
                 if highstate[id_] != state[id_]:
-                    if highstate[id_]['__env__'] != state[id_]['__env__'] or \
-                                    highstate[id_]['__sls__'] != state[id_]['__sls__']:
+                    if highstate[id_]['__env__'].replace('/', '.') \
+                            != state[id_]['__env__'].replace('/', '.') \
+                            or highstate[id_]['__sls__'].replace('/', '.') \
+                            != state[id_]['__sls__'].replace('/', '.'):
                         errors.append((
                             'Detected conflicting IDs, SLS'
                             ' IDs need to be globally unique.\n    The'
