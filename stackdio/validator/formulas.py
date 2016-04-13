@@ -29,6 +29,7 @@ EXTRA_GRAINS = {
     'id': 'foo',
     'stack_id': 1,
     'roles': [],
+    'domain': 'test.stackd.io',
     'os_family': 'RedHat',
     'osmajorrelease': '7',
     'os': 'CentOS',

@@ -33,7 +33,7 @@ requirements = [
 # of packaging stackdio
 setup(
     name='stackdio-formula-validator',
-    version='0.1.0.dev',
+    version='0.7.0.dev',
     url='http://stackd.io',
     author='Digital Reasoning Systems, Inc.',
     author_email='info@stackd.io',

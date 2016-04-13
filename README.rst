@@ -15,3 +15,6 @@ Installation
 Usage
 -----
 
+.. code::
+
+    validate-formula <path-to-formula-directory>
