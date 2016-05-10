@@ -30,6 +30,7 @@ EXTRA_GRAINS = {
     'stack_id': 1,
     'roles': [],
     'domain': 'test.stackd.io',
+    'namespace': 'dev',
 
     # Simulate centos 7
     'os_family': 'RedHat',
